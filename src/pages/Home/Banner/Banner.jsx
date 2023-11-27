@@ -10,9 +10,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
-import bannerImg from '../../../assets/banner/slider31-96.jpg'
-import bannerImg1 from '../../../assets/banner/slider32-916.jpg'
-import bannerImg2 from '../../../assets/banner/slider33-550.jpg'
+import bannerImg from '../../../assets/home/banner/slider31-96.jpg'
+import bannerImg1 from '../../../assets/home/banner/slider32-916.jpg'
+import bannerImg2 from '../../../assets/home/banner/slider33-550.jpg'
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -22,7 +22,7 @@ const Banner = () => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 pagination={{

@@ -10,12 +10,12 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Navigation } from 'swiper/modules';
 
-import img1 from '../../../assets/NewArrivals/img1.jpg'
-import img2 from '../../../assets/NewArrivals/img2.jpg'
-import img3 from '../../../assets/NewArrivals/img7.jpg'
-import img4 from '../../../assets/NewArrivals/img4.jpg'
-import img5 from '../../../assets/NewArrivals/img5.jpg'
-import img6 from '../../../assets/NewArrivals/img6.jpg'
+import img1 from '../../../assets/home/NewArrivals/img1.jpg'
+import img2 from '../../../assets/home/NewArrivals/img2.jpg'
+import img3 from '../../../assets/home/NewArrivals/img7.jpg'
+import img4 from '../../../assets/home/NewArrivals/img4.jpg'
+import img5 from '../../../assets/home/NewArrivals/img5.jpg'
+import img6 from '../../../assets/home/NewArrivals/img6.jpg'
 
 const NewArrivals = () => {
     const newArrivalsData = [
@@ -78,7 +78,7 @@ const NewArrivals = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className=" container mx-auto p-5">
+        <div className=" container mx-auto p-5 mt-20 md:mt-10 sm:mt-6">
             <h1 className="text-center text-3xl font-bold">NEW ARRIVALS</h1>
             <p className="text-center p-5">Lorem ipsuet adipisicing elit, sed det adipisicing elit, sed sed det adipisicing elit.</p>
 
@@ -118,7 +118,7 @@ const NewArrivals = () => {
                         slidesPerView: 1,
                     },
                     992: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                     1200: {
                         slidesPerView: 3,
@@ -128,8 +128,8 @@ const NewArrivals = () => {
                 className="mySwiper mt-10"
             >
                 {
-                    newArrivalsData.map((ArrivalsData, idx) => <div
-                        key={idx}
+                    newArrivalsData.map((ArrivalsData) => <div
+                        key={ArrivalsData.id}
                     >
                         <SwiperSlide>
                             <div className="h-[500px] w-96 rounded-md">

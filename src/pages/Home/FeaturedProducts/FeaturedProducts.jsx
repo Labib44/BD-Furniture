@@ -1,9 +1,9 @@
-import img1 from '../../../assets/featuredProducts/banner21.jpg'
-import img2 from '../../../assets/featuredProducts/viverra-non-semper.jpg'
-import img3 from '../../../assets/featuredProducts/one-shoulder-bow-top (7).jpg'
-import img4 from '../../../assets/featuredProducts/banner22.jpg'
-import img5 from '../../../assets/featuredProducts/posuere-a-pede (3).jpg'
-import img6 from '../../../assets/featuredProducts/tuer-adipiscing-elit (3).jpg'
+import img1 from '../../../assets/home/featuredProducts/banner21.jpg'
+import img2 from '../../../assets/home/featuredProducts/viverra-non-semper.jpg'
+import img3 from '../../../assets/home/featuredProducts/one-shoulder-bow-top (7).jpg'
+import img4 from '../../../assets/home/featuredProducts/banner22.jpg'
+import img5 from '../../../assets/home/featuredProducts/posuere-a-pede (3).jpg'
+import img6 from '../../../assets/home/featuredProducts/tuer-adipiscing-elit (3).jpg'
 
 const FeaturedProducts = () => {
     return (
