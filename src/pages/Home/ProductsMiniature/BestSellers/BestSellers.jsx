@@ -61,9 +61,9 @@ const BestSellers = () => {
                 bestSellers.map((bestSeller) => <div
                     key={bestSeller.id}
                 >
-                    <div className='flex'>
-                        <div className='h-32 w-32'>
-                            <img src={bestSeller.img} alt="Suspendisse Urna" className='h-full w-full' />
+                    <div className='flex '>
+                        <div className='h-32 w-32 overflow-hidden'>
+                            <img src={bestSeller.img} alt="Suspendisse Urna" className='h-full w-full hover:scale-150 duration-700' />
                         </div>
                         <div className='m-5'>
                             <h1 className='text-xl font-serif font-semibold'>{bestSeller.title}</h1>

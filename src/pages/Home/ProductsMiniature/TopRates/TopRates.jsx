@@ -58,8 +58,8 @@ const TopRates = () => {
                     key={topRate.id}
                 >
                     <div className='flex'>
-                        <div className='h-32 w-32'>
-                            <img src={topRate.img} alt="Suspendisse Urna" className='h-full w-full' />
+                        <div className='h-32 w-32 overflow-hidden'>
+                            <img src={topRate.img} alt="Suspendisse Urna" className='h-full w-full hover:scale-150 duration-700' />
                         </div>
                         <div className='m-5'>
                             <h1 className='text-xl font-serif font-semibold'>{topRate.title}</h1>

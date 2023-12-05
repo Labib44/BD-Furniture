@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
     // const [fix, setFix] = useState(false);
 
-    let content;
+    // let content;
 
 
     // function setFixed() {
@@ -24,17 +24,17 @@ const Navbar = () => {
 
     const menuItem = <>
         <li className="flex"><Link to="/" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>HOME</Link></li>
-        <li className="flex"> <Link to="about" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SHOP</Link></li>
-        <li className="flex"> <Link to="service" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>CHAIRS</Link></li>
-        <li className="flex"> <Link to="works" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SOFA</Link></li>
-        <li className="flex"> <Link to="pricing" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>ABOUT US</Link></li>
-        <li className="flex"> <Link to="blog" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>BLOG</Link></li>
+        <li className="flex"> <Link to="shop" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SHOP</Link></li>
+        <li className="flex"> <Link to="" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>CHAIRS</Link></li>
+        <li className="flex"> <Link to="" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>SOFA</Link></li>
+        <li className="flex"> <Link to="" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>ABOUT US</Link></li>
+        <li className="flex"> <Link to="" className='flex items-center text-xl  font-semibold mr-5 hover:text-secondary duration-700 pt-5 lg:pt-5 md:mt-0'>BLOG</Link></li>
 
     </>
     return (
-        <div className="p-5">
+        <div className="p-3">
             <header className="">
-                <div className=" flex justify-between h-20 mx-44 lg:mx-0 md:mx-0 sm:mx-0 ">
+                <div className=" flex justify-between h-16 mx-44 lg:mx-0 md:mx-0 sm:mx-0 ">
                     <Link to={"/"}  >
                         <div className="">
                             <img src={navbar} className="py-5 h-[80px]" alt="logo" />
@@ -62,6 +62,7 @@ const Navbar = () => {
                             <ul className="absolute z-50 left-0 p-2 pb-5 shadow bg-base-100 w-full">
                                 {menuItem}
                                 <button className="self-center px-5 py-2 mt-5 bg-[#1C2F50] text-white font-semibold rounded-full ">Login</button>
+                               
                             </ul>
                         )}
                     </div>
